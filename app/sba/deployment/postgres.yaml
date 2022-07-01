@@ -22,3 +22,20 @@ spec:
         name: postgres
         resources: {}
 status: {}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: postgres
+    spec:
+      containers:
+      - image: postgres
+        name: postgres
+        resources: {}
+status: {}
