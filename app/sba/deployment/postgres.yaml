@@ -22,4 +22,4 @@ spec:
       - image: postgres
         name: postgres
         resources: {}
-status: {}
+status:{}
